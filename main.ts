@@ -5,7 +5,6 @@ let degrees = 0
 input.onPinPressed(TouchPin.P0, function () {
     radio.sendNumber(0)
     music.playSoundEffect(music.createSoundEffect(WaveShape.Noise, 54, 54, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
-    basic.showString("HI")
 })
 radio.onReceivedNumber(function (receivedNumber) {
     basic.showString("HI")
@@ -17,7 +16,6 @@ input.onButtonPressed(Button.A, function () {
 input.onPinPressed(TouchPin.P2, function () {
     radio.sendString("hi")
     music.playSoundEffect(music.createSoundEffect(WaveShape.Noise, 54, 54, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
-    basic.showString("SENDHELP!")
 })
 input.onButtonPressed(Button.AB, function () {
     basic.clearScreen()
@@ -32,7 +30,6 @@ input.onButtonPressed(Button.B, function () {
 input.onPinPressed(TouchPin.P1, function () {
     radio.sendValue("name", 0)
     music.playSoundEffect(music.createSoundEffect(WaveShape.Noise, 54, 54, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
-    basic.showString("HOWAREYOU?")
 })
 input.onGesture(Gesture.Shake, function () {
     if (input.logoIsPressed()) {
